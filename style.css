@@ -156,29 +156,28 @@ footer{
 
 
 .input-wrapper {
-  display: flex;
-  gap: 8px;
-  max-width: 400px;
-  margin: 20px auto;
+    display: flex;
+    gap: 8px;
+    margin: 20px auto;
 }
 
 .input-field {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #414141;
+    font-size: 16px;
 }
 
 .submit-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+    height: 40px;
+    width: 160px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
