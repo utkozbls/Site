@@ -1,0 +1,186 @@
+html{
+    background-color: #d8d8d8;
+}
+body{
+    position: relative;
+    box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.17);
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 0%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #575757b9;
+    display: flex;
+    margin-top: 20px;
+    margin-left: -75px;
+    margin-right: -75px;
+}
+
+.crol{
+    font: bold 15px "Segoe UI";
+    width: 220px;
+    height: 50px;
+    background-color: rgb(133, 133, 133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid #9b9b9b;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.crol:hover{
+    background-color: rgb(121, 121, 121);
+    transform: scale(1.05)
+}
+.crol:active{
+    background-color: #575757;
+}
+.header1 {
+    position: absolute;
+    left: -5%; /* Выносит элемент за левый край на 10% от ширины окна */
+    margin-top: 25px;
+}
+.svg-element{
+    fill: #fff;
+    scale: 0.9;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.svg-element:hover{
+    scale: 1.05;
+}
+.svg-element:active{
+    fill: #d6d6d6;
+}
+
+footer{
+    height: 45px;
+    background-color: #2596ff;
+    text-align: center;
+    font: bold 17px sans-serif;
+    color: #ffffff;
+}
+
+
+.z{
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.17);
+    width: 1100px;
+    height: 500px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    text-align: center;
+    width: 1100px;
+    overflow: hidden;
+    }
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    }
+.slide {
+    width: 1100px;
+    }
+.slide img {
+    width: 1100px;
+    height: auto;
+    }
+
+.custom-prev, .custom-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(175, 175, 175, 0.4);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+    z-index: 1000; /* Поверх слайдов */
+}
+
+.custom-prev{
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.custom-next{
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+
+
+/* Hover-эффект для кнопок */
+.custom-prev:hover, .custom-next:hover {
+    background-color: rgba(173, 173, 173, 0.6);
+}
+
+.custom-prev:active, .custom-next:active {
+    background-color: rgba(170, 170, 170, 0.7);
+}
+
+
+.cont_blok{
+    box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.17);
+    height: 100%;
+    width: 1050px;
+    background-color: #7c7c7c;
+    font: bold 17px sans-serif;
+    padding: 25px;
+    color: #ffffff;
+}
+
+
+.input-wrapper {
+  display: flex;
+  gap: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
