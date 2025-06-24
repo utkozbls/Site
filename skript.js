@@ -22,7 +22,7 @@ function slidePrev() {
  slides.style.transform = `translateX(${-counter * slideWidth}px)`;
  }
 
- setInterval(slideNext, 6000);
+ setInterval(slideNext, 6000); // автоматическая смена слайдов каждые 3 секунды
 
 nextbut.addEventListener("click", slideNext);
 predbut.addEventListener("click", slidePrev);
@@ -39,6 +39,6 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.3
 });
 
-const hiddenElements = document.querySelectorAll('.z1:not(:first-child)');
+const hiddenElements = document.querySelectorAll('.z1:not(:first-child)');  // выбираем все блоки 'z' кроме первого
 
 hiddenElements.forEach((el) => observer.observe(el));

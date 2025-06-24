@@ -227,3 +227,16 @@ footer{
     opacity: 1;
     transform: translateY(0); /* Возвращаем в исходное положение */
 }
+
+
+.hidden {
+    display: none;
+}
+
+.zzz{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
