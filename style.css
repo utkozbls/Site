@@ -211,3 +211,19 @@ footer{
 .name{
     color: #000000;
 }
+
+.z1{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(40px); /* Начальное положение чуть ниже */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Плавный переход */
+}
+
+.z1.active {
+    opacity: 1;
+    transform: translateY(0); /* Возвращаем в исходное положение */
+}
