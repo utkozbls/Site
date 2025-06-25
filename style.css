@@ -185,8 +185,42 @@ footer{
   background-color: #0056b3;
 }
 
-.gal{
-    width: 500px;
+.gal {
+  max-width: 600px;      /* ширина блока (можно менять)           */
+  margin: 0 auto;        /* центрируем весь блок по ширине страницы */
+}
+
+/* большое изображение */
+.gal .big {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 10px #00000000;
+  transition: box-shadow 0.2s;
+}
+
+.gal .big:hover {
+  box-shadow: 0 0 10px #00000067;
+}
+
+.thumbs {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbs img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color .2s;
+}
+
+.thumbs img:hover {
+  border-color: #fff;
 }
 
 .pod{
@@ -207,6 +241,7 @@ footer{
     padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .name{
     color: #000000;
@@ -219,13 +254,13 @@ footer{
     display: flex;
     justify-content: center;
     opacity: 0;
-    transform: translateY(40px); /* Начальное положение чуть ниже */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Плавный переход */
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .z1.active {
     opacity: 1;
-    transform: translateY(0); /* Возвращаем в исходное положение */
+    transform: translateY(0);
 }
 
 
@@ -239,4 +274,45 @@ footer{
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.page-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #687ffc;
+    color: white;
+}
+
+.page-button:hover {
+    background-color: #ddd;
+}
+
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+#lightbox img {
+  width: 800px;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  box-shadow: 0 0 10px #000;
 }
